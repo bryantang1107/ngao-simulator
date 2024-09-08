@@ -26,11 +26,11 @@ def getRank(card):
 def calculateScore3Cards(cards):
     total = 0
     is3Times = True
-    is5Times = True
+    is5Times = False
+    if cards[0]["card"] == cards[1]["card"] == cards[2]["card"]:
+        is5Times = True
     for card in cards:
         if card["card"] not in globals.pictures:
-            is5Times = False
-        if card["card"].isdigit() or card["card"] == "A":
             is3Times = False
         total += getPoint(card["card"])
 
