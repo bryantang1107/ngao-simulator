@@ -1,3 +1,5 @@
+import globals
+
 def checkNgaoTongGu(valid_ngao):
     for i in range(len(valid_ngao)):
         exists = any(card['score'] == 1 and card['pattern'] == '♠' for card in valid_ngao[i]["top"])
