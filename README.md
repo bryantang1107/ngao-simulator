@@ -2,11 +2,11 @@ NGAO SIMULATOR
 NGAO Simulator tries different card combinations to find the best possible hand for a player.
 
 Rules:
-+----------+
-1st Round
-+----------+
-Each player gets 3 cards, the player with highest points wins the 1st round.
-Some Example: 
++------------+  
+1st Round  
++------------+  
+Each player gets 3 cards, the player with highest points wins the 1st round.  
+Some Example:   
 ```
 +------+  +------+  +------+  
 | 2    |  | 5    |  | 6    |  
@@ -21,20 +21,20 @@ Some Example:
 +------+  +------+  +------+  (3 + 7 + 9 = 19) ~ 9 points
 ```
 
-+-----------------------------------------------------------------+
-Reward for 1st round:
-1 - 9 points - reward X 1
-10 points - reward X 2
-3 cards composed of any "J", "Q", "K" - reward X 3
-Same cards (eg: 3,3,3 | 4,4,4 | J,J,J) - reward X 5
-+-----------------------------------------------------------------+
++-----------------------------------------------------------------+  
+Reward for 1st round:  
+1 - 9 points - reward X 1  
+10 points - reward X 2  
+3 cards composed of any "J", "Q", "K" - reward X 3  
+Same cards (eg: 3,3,3 | 4,4,4 | J,J,J) - reward X 5  
++-----------------------------------------------------------------+  
 
-+----------+
-2nd Round
-+----------+
-Each player will get 2 additional cards.
-Player must use 3 cards to form a valid base (base is any 3 cards that sum up to 10,20 or 30)
-Card with number "3" can represent "6" and vice versa
++----------+  
+2nd Round  
++----------+  
+Each player will get 2 additional cards.  
+Player must use 3 cards to form a valid base (base is any 3 cards that sum up to 10,20 or 30)  
+Card with number "3" can represent "6" and vice versa  
 ```
 +------+  +------+  +------+  
 | J    |  | K    |  | K    |  
@@ -49,7 +49,7 @@ Card with number "3" can represent "6" and vice versa
 +------+  +------+  +------+  --> invalid base
 ```
 
-Some Example:
+Some Example:  
 ```
     +------+  +------+  
     | 7    |  | 8    |  
@@ -84,12 +84,12 @@ Some Example:
 if these are your cards, (congratulation you have the worst possible hand) because you can't form a valid base
 
 ```
-+-----------------------------------------------------------------+
-Reward for 2nd round:
-Sum of Top cards with 1 - 9 points - Reward X 1
-Sum of Top cards with 10 points - Reward X 2
-Same top cards (example 2) - Reward X 3
-Top cards with Ace of spades and any "J", "Q", "K" - Reward X 5
++-----------------------------------------------------------------+  
+Reward for 2nd round:  
+Sum of Top cards with 1 - 9 points - Reward X 1  
+Sum of Top cards with 10 points - Reward X 2  
+Same top cards (example 2) - Reward X 3  
+Top cards with Ace of spades and any "J", "Q", "K" - Reward X 5  
 
 eg:
 ```
